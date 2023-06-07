@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Card Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Card Shop</h1>
+    </header>
+    
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de Produtos</span>
+        </div>
+        
+        <div class="card">     
+            <div class="lineInput">
+                <label for="produto">Produto</label>
+                <input type="text" name="produto" id="produto" placeholder="Nome do Produto">
+            </div>       
+            
+            <div class="lineInput">
+                <label for="valor">Preço</label>
+                <input type="text" name="valor" id="valor" placeholder="Valor do Produto">
+            </div>       
+            
+            <button onclick="obj_Produtos.Salvar()" id="btnSalvar">Salvar</button>
+            <button onclick="obj_Produtos.Cancelar()">Cancelar</button>
+        </div>
+        
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer>
+        
+    </footer>
+</body>
+</html>
